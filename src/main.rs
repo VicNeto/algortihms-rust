@@ -1,11 +1,14 @@
 use sorting::merge_sort;
+use divide_and_conquer::count_inv;
 
 mod sorting;
+mod divide_and_conquer;
 
 #[allow(dead_code)]
 
 fn main() {
-    // let res = merge(&vec![3,7,9], &vec![1,8,10]);
     let res = merge_sort(vec![1,8,3,13,4,6,12,5,7]);
+    let (_, split_count) = count_inv(vec![1,3,5,2,4,6]);
     println!("{:?}", res);
+    println!("{:?}", split_count);
 }
