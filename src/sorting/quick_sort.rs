@@ -1,4 +1,3 @@
-// use std::vec::Vec;
 
 #[allow(dead_code)]
 
@@ -24,15 +23,3 @@ pub fn partition(array: &mut [u64], left: usize, right: usize) -> usize {
     array.swap(left, i - 1);
     return i - 1
 }
-
-// pub fn part(array: &mut Vec<usize>) {
-//     let middle = (array.len() / 2) as usize;
-//     modify(array, 2);
-//     modify(array, 1)
-// }
-
-// pub fn modify(array: &mut Vec<usize>, factor: usize) {
-//     for i in array.iter() {
-//         *i = factor
-//     }
-// }
